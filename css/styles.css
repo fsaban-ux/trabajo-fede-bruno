@@ -6,5 +6,14 @@
 
 }
 .color_letra{
-    
+    color: white;
+}
+.lista-home {
+    text-decoration: none;
+}
+.adidas{
+    display: flex;
+}
+.nav-home{
+    display: flex;
 }
