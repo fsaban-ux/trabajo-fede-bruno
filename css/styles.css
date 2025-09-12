@@ -2,8 +2,7 @@
 
 }
 .home {
-   background-color: black;
-
+   background-image: url("../img/fondo\ 2.png");
 }
 .color_letra{
     color: white;
@@ -13,7 +12,20 @@
 }
 .adidas{
     display: flex;
+    background-image: url("../img/Fondo3.png");
+   
+    
 }
 .nav-home{
     display: flex;
+}
+.imagen-adidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    
+}
+img {
+    padding: 20px;
 }
