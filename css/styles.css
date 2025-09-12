@@ -35,5 +35,15 @@ img {
     flex-direction: row;
     justify-content: space-around;
    
-    
+}
+
+.nike {
+   background-image: url("../img/Fondo4.png");
+   display: flex;
+}
+.imagen-nike {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
 }
