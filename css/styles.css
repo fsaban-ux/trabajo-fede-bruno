@@ -29,3 +29,11 @@
 img {
     padding: 20px;
 }
+
+.imagen-newbalance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    
+}
