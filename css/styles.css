@@ -13,21 +13,32 @@
 .adidas{
     display: flex;
     background-image: url("../img/Fondo3.png");
-   
-    
+     
 }
-.nav-home{
+.nav-home {
     display: flex;
 }
-.imagen-adidas {
+.nav-li {
+    margin: 10px 0;
+}
+.nav-lia {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.seccion {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 200px;
-    height: 150px;
-   
-    
+    width: 250px;
+    height: 200px;
 }
+
 img {
     padding: 20px;
 }
