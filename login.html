@@ -10,12 +10,12 @@
 
 <body class="home">
     <header>
-        <a href="home.html"><img id="logoempresa" src="./img/logo.png" alt=""></a>
+        <a href="index.html"><img id="logoempresa" src="./img/logo.png" alt=""></a>
         <nav class="nav-ul">
             <ul class="nav-ulp">
-                <li><a class="nav-lia" href="./home.html">Home</a></li>
-                <li><a class="nav-lia" href="./register.html">Registrarme</a></li>
-                <li><a class="nav-lia" href="./category.html">Categorias</a></li>
+                <li><a class="nav-lia" href="./index.html">HOME</a></li>
+                <li><a class="nav-lia" href="./register.html">REGISTRARME</a></li>
+                <li><a class="nav-lia" href="./category.html">CATEGORIAS</a></li>
             </ul>
         </nav>
 
@@ -30,24 +30,23 @@
 
     </header>
 
+
     <main class="elementos">
         <form action="results.html" method="GET">
             <div class="cajainicio">
-                <label>
-                    <input id="email" type="email" name="email" required placeholder="Ingrese su email">
+                <label for="email"></label>
+                <input id="email" type="email" name="email" required placeholder="Ingrese su email">
 
+                <label for="contrasena"></label>
+                <input id="contrasena" type="password" name="contrasena" required placeholder="Ingrese su contrasena">
 
-                    <label for="contrasena"></label>
-                    <input id="contrasena" type="password" name="contrasena" required
-                        placeholder="Ingrese su contrasena">
+                <div class="boton"> <button type="submit">Enviar</button> </div>
 
-                    <button type="submit">Enviar</button>
-
-                    <div class="color_letra">
-                        <a href="register.html">No tengo cuenta</a>
-                        <a href="home.html"> Volver al index</a>
-                    </div>
-
+                <div class="color_letra">
+                    <a href="register.html">No tengo cuenta</a>
+                    <a href="index.html"> Volver al index</a>
+                </div>
+                </label>
             </div>
         </form>
     </main>
