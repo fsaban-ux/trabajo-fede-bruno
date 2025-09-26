@@ -1,4 +1,7 @@
-* 
+* {
+   padding: 0;
+   margin: 0;
+}
 body {
     background-image: url("../img/fondo\ 2.png");
 }
@@ -12,6 +15,18 @@ body {
 .color_letra {
     color: white;
 }
+.color_marcas {
+    color: white;
+    margin-top: 30px;
+}
+.color_marcas2 {
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 
 .lista-home {
     text-decoration: none;
@@ -178,4 +193,51 @@ img {
     height: 60px;
     align-items: center;
     font-size: 20px;
+}
+.nombre-botin {
+
+}
+.valoraciones {
+    margin-top: 30px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.imagen-producto {
+    margin-left: 20px;
+    width: 400px;
+}
+.precio {
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+margin-top: 40px;
+}
+.precio2 {
+color: chartreuse;
+margin-bottom: 20px;
+font-size: 35px;
+font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+}
+.Informacion-botin {
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.contenedor2 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.review {
+     color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
 }
