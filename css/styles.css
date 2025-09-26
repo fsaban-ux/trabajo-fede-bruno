@@ -15,6 +15,7 @@ body {
 
 .lista-home {
     text-decoration: none;
+    list-style: none;
 }
 
 .adidas {
@@ -23,8 +24,40 @@ body {
 
 }
 
-.nav-home {
+main {
     display: flex;
+}
+
+section.main-products {
+    display: flex;
+    width: 800px;
+    margin-top: 20px;
+}
+.nav-category {
+    position: sticky;
+    list-style: none;
+    margin: 10px;   
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    align-items: flex-start;
+   align-self: start;
+    display: flex;
+    margin-left: 0px;
+
+
+
+   
+
+  
+}
+
+section.main-products-home {
+    display: flex;
+    width: 1000px;
+    margin-top: 20px;
 }
 
 .nav-li {
@@ -120,12 +153,9 @@ img {
    align-items: center;
    flex-direction: column;
    display: flex;
-}
+}   
 
-#futbol2 {
-    margin-top: 1000px;
-    margin-left: 350px;
-}
+
 .fecha{
     font-style: italic;
 }
@@ -139,4 +169,13 @@ img {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.buscador1 {
+    margin-right: 10000px;
+    padding: 0;
+    background-color: rgb(218, 209, 209);
+    height: 60px;
+    align-items: center;
+    font-size: 20px;
 }
