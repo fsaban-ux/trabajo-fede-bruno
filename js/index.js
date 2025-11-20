@@ -6,7 +6,6 @@ fetch(api)
     .then(function (response) {
         return response.json();
     })
-
     .then(function (data) {
         let productos = data.products
         console.log(productos)
