@@ -1,6 +1,6 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let terminoBuscado = queryStringObj.get("busqueda");
+let terminoBuscado = queryStringObj.get("busquedad");
 
 let seccion = document.querySelector(".seccion");
 let seccionTerminoBuscado = document.querySelector(".color_marcas2");
@@ -16,12 +16,12 @@ fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
     })
     .then(function (data) {
         console.log(data)
-        let productos = data.productos
+        let productos = data.products
 
-        if (productos.lenght == 0) {
+        if (productos.length == 0) {
             BusquedaVacia.innerHTML += `No se encontraron resultados similares a ${terminoBuscado}`
         } else {
-            for (let i = 0; i < productos.lenght; i++) {
+            for (let i = 0; i < productos.length; i++) {
             seccion.innerHTML += `
                    <article class="articulobotin">
         <img src=${productos[i].thumbnail} alt="Botin2A"> Botin Predator
@@ -42,7 +42,7 @@ let formulario = document.querySelector(".formSearch")
 let campoBusqueda = document.querySelector(".inputSearch")
 let errorBusqueda = document.querySelector(".errorSearch")
 
-formulario.addEventListener('sumbit', function (event) {
+formulario.addEventListener('submit', function (event) {
     event.preventDefault();
     let valid = true;
 
@@ -51,7 +51,7 @@ formulario.addEventListener('sumbit', function (event) {
         errorBusqueda.style.display = 'block';
         valid = false;
     }
-    else if (campoBusqueda.value.lenght < 3) {
+    else if (campoBusqueda.value.length < 3) {
         errorBusqueda.innerText == 'El termino de busqueda debe tener al menos 3 caracteres';
         errorBusqueda.style.display = 'block';
         valid = false;

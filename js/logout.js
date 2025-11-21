@@ -1,11 +1,14 @@
+let logoutbtn = document.querySelector ('.logout-btn')
+
 window.addEventListener ("load", function(){
-    let logoutBoton = this.document.querySelector(".botonLogout")
-    logoutBoton.addEventListener("click", function(){
+    
+    let saludo = this.document.querySelector (".container-log")
+    let navLogin = this.document.querySelector (".log")
+
+        logoutbtn.addEventListener("click", function(){
         localStorage.clear();
 
-        let usu = document.querySelector (".usuarioSaludo")
-        usu.style.display = "none"
-        let usunav = document.querySelector (".navLogout")
-        usunav.style.display = "none"
-    })
+      saludo.computedStyleMap.displayu = 'none'
+      navLogin.style.display = 'block'
+        })
 })
