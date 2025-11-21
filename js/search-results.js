@@ -38,16 +38,16 @@ fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
     );
 
 
-let formulario = document.querySelector("formSearch")
-let campoBusqueda = document.querySelector("inputSearch")
-let errorBusqueda = document.querySelector("errorSearch")
+let formulario = document.querySelector(".formSearch")
+let campoBusqueda = document.querySelector(".inputSearch")
+let errorBusqueda = document.querySelector(".errorSearch")
 
 formulario.addEventListener('sumbit', function (event) {
     event.preventDefault();
     let valid = true;
 
     if (campoBusqueda.value === "") {
-        errorBusqueda.innerText == 'Porfavor Ccomplete el campo de busqueda';
+        errorBusqueda.innerText == 'Porfavor complete el campo de busqueda';
         errorBusqueda.style.display = 'block';
         valid = false;
     }

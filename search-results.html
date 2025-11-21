@@ -20,25 +20,47 @@
     </nav>
 
     <div>
-      <form action="search-results.html" method="GET">
-        <input id="buquedad" type="busquedad" name="busquedad" required placeholder="buscar aca">
-
-        <button a type="submit">buscar</button>
+      <form action="search-results.html" class="formSearch" method="GET">
+        <input id="buquedad" type="busquedad" name="busquedad" class="inputSearch" required placeholder="buscar aca">
+        <p class="errorSearch"></p>
+       
 
       </form>
     </div>
 
   </header>
   <main class="contenido">
- 
+    <aside class="nav-category">
+      <h1 class="color_letra">Categorias:</h1>
+      <nav>
+        <ul class="lista-home">
+          <a href="./category.html?tag=motorcycle">
+            <li>Motos</li>
+          </a>
+          <a href="./category.html?tag=vehicle">
+            <li>Autos</li>
+          </a>
+          <a href="./category.html?tag=smartphones">
+            <li>Smartphones</li>
+          </a>
+
+
+        </ul>
+      </nav>
     </aside>
 
 
     <section class="main-products">
+      <h2 class="color_marcas2"></h2>
+      <h3 class="busquedaVacia"></h3>
 
 
+      <div class="seccion">
 
-       
+      </div>
+    </section>
+
+
   </main>
   <footer class="nombres">Federico Saban y Bruno Ostrowiecki</footer>
 
