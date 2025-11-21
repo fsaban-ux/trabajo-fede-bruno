@@ -15,7 +15,7 @@ fetch (`https://dummyjson.com/products/category/${tag}`)
 
             for (let i = 0; i < productos.length; i++) {
 
-              productsdiv.innerHTML += `<article class="articulobotin">
+              productosdiv.innerHTML += `<article class="articulobotin">
           <img src=${productos[i].thumbnail} alt="Botin2A"> Botin predator
          <p class="titulos">${productos[i].title}</p>
       <p class="precio">${productos[i].price}</p>

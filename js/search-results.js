@@ -38,10 +38,6 @@ fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
     );
 
 
-
-
-
-
 let formulario = document.querySelector("formSearch")
 let campoBusqueda = document.querySelector("inputSearch")
 let errorBusqueda = document.querySelector("errorSearch")
@@ -55,7 +51,7 @@ formulario.addEventListener('sumbit', function (event) {
         errorBusqueda.style.display = 'block';
         valid = false;
     }
-    else if () (campoBusqueda.value.lenght < 3) {
+    else if (campoBusqueda.value.lenght < 3) {
         errorBusqueda.innerText == 'El termino de busqueda debe tener al menos 3 caracteres';
         errorBusqueda.style.display = 'block';
         valid = false;

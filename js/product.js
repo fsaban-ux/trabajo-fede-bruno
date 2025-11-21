@@ -7,7 +7,7 @@ console.log(queryString);
 let urlParams = new URLSearchParams(queryString);
 let productId = urlParams.get("id");
 
-let api =`https://dummyjson.com/products/${productoId}`
+let api =`https://dummyjson.com/products/${productId}`
 
 
 fetch(api)
