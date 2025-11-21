@@ -1,5 +1,5 @@
 let queryString = location.search;
-let queryStringObj = mew URLSearchParams(queryString);
+let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get("busqueda");
 
 let seccion = document.querySelector(".seccion");
@@ -7,7 +7,7 @@ let seccionTerminoBuscado = document.querySelector(".color_marcas2");
 let BusquedaVacia = document.querySelector(".busquedaVacia");
 
 
-seccionTerminoBuscadi.innerHTML += `Resultados de busqueda: ${terminoBuscado}`
+seccionTerminoBuscado.innerHTML += `Resultados de busqueda: ${terminoBuscado}`
 
 
 fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
