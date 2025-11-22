@@ -14,7 +14,7 @@ formulario.addEventListener ('submit', function (event){
        valid_password.innerText = "El campo no puede estar vacio";
         valid_password.style.display = "block";
     }
-    else if (password.value.lenght <6){
+    else if (password.value.length <6){
        valid_password.innerText = "La contrasena debe tener al menos 6 caracteres ";
         valid_password.style.display = "block";
     }
